@@ -1,0 +1,11 @@
+assets:
+  assets/img/logo.jpg:
+    link_URL: https://2020.igem.org/wiki/images/1/11/T--BITSPilani-Goa_India--img--logo.jpg
+    md5: d47d3629a83090c33e94c961e03a03d2
+    upload_filename: T--BITSPilani-Goa_India--img--logo.jpg
+css: {}
+html:
+  Test/index.html:
+    link_URL: https://2020.igem.org/Team:BITSPilani-Goa_India/Test
+    md5: 2c110205a0457e72924e8337b6894a75
+js: {}
