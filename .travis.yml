@@ -20,7 +20,7 @@ after_script:
   - git status
   - git add .
   - 'git commit -m "Travis build: $TRAVIS_BUILD_NUMBER"'
-  - git remote -v
-  - git remote add deployed https://${GH_TOKEN}@github.com/igembitsgoa/igem-wikisync-test.git
-  - git remote -v
-  - git push --set-upstream master deployed
+  # - git remote -v
+  # - git remote add deployed https://${GH_TOKEN}@github.com/igembitsgoa/igem-wikisync-test.git
+  # - git remote -v
+  - git push origin master
