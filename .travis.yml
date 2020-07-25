@@ -6,14 +6,12 @@ python:
 git:
   depth: false
 
-# install:
-  # - pip install -r requirements.txt
+install:
+  - pip install -r requirements.txt
 
 script:
   - git checkout master
-  - mv Dockerfile Dockerfile2
-  - ls
-  # - python igem-wikisync.py
+  - python igem-wikisync.py
 
 after_script:
   - git config --global user.email "travis@travis-ci.com"
@@ -27,3 +25,6 @@ after_script:
   - git remote add origin https://ballaneypranav:${GH_TOKEN}@github.com/igembitsgoa/igem-wikisync-test.git > /dev/null 2>&1
   - git status
   - git push origin master 
+
+
+# from https://www.vinaygopinath.me/blog/tech/commit-to-master-branch-on-github-using-travis-ci/
