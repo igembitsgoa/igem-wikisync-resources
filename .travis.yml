@@ -6,11 +6,13 @@ python:
 git:
   depth: false
 
-install:
-  - pip install -r requirements.txt
+# install:
+  # - pip install -r requirements.txt
 
 script:
-  - python igem-wikisync.py
+  - mv Dockerfile Dockerfile2
+  - ls
+  # - python igem-wikisync.py
 
 after_script:
   - git config --global user.email "travis@travis-ci.org"
