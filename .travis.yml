@@ -15,6 +15,7 @@ script:
 after_script:
   - git config --global user.email "travis@travis-ci.org"
   - git config --global user.name "Travis CI"
+  - git checkout -b master
   - git add .
   - 'git commit -m "Travis build: $TRAVIS_BUILD_NUMBER"'
   - git push
