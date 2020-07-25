@@ -1,1 +1,1 @@
-Testing our Wiki Upload tool
+Testing iGEM WikiSync
