@@ -16,14 +16,14 @@ css:
     md5: b1747f1f028648114f53e89033b95e89
   Test/css/style.css:
     link_URL: https://2020.igem.org/Template:BITSPilani-Goa_India/Test/css/styleCSS?action=raw&ctype=text/css
-    md5: a8f4d4acb822d73de9049cef358f6356
+    md5: c4acb97c037bb6c029d026617c700f22
 html:
   Test/Description/index.html:
     link_URL: https://2020.igem.org/Team:BITSPilani-Goa_India/Test/Description
-    md5: 04b9b447b55806f4dbaff467f44b26b9
+    md5: f2dcf52e52901a4c837bd204142cbdc8
   Test/index.html:
     link_URL: https://2020.igem.org/Team:BITSPilani-Goa_India/Test
-    md5: 5509cf7bbb6ca0e71a9e34f1f15c6995
+    md5: 44c23e9eb4b6e6fc3e84d83e0b2fe8d5
 js:
   Test/js/main.js:
     link_URL: https://2020.igem.org/Template:BITSPilani-Goa_India/Test/js/mainJS?action=raw&ctype=text/javascript

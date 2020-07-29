@@ -4,3 +4,11 @@ body {
     /* Image from https://www.transparenttextures.com/ */
 }
 
+header {
+    padding: 2.5rem;
+    background: white;
+}
+
+a.btn:visited {
+    color: white;
+  }
