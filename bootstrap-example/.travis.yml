@@ -1,0 +1,32 @@
+language: python
+
+python: 3.7
+
+git:
+  depth: false
+
+install:
+  - pip install igem-wikisync 
+
+before_script:
+  # Git setup
+  - git checkout "${TRAVIS_BRANCH}"
+  - git config --global user.email "travis@travis-ci.com"
+  - git config --global user.name "Travis CI"
+script:
+  # Push to iGEM
+  - python wikisync.py
+  # Print upload map in case pushing back to Github doesn't work
+  - cat upload_map.yml
+  # Remove existing "origin"
+  - git remote rm origin
+  # Add new "origin" with access token in the git URL for authentication
+  - git remote add origin https://${GITHUB_USERNAME}:${GITHUB_TOKEN}@github.com/${TRAVIS_REPO_SLUG}.git > /dev/null 2>&1
+  - git add .
+  - 'git commit -m "Travis: Build and deploy to iGEM" -m "[skip ci]"'
+  - git push origin "${TRAVIS_BRANCH}" -f
+
+notifications:
+  email:
+    on_success: never
+    on_failure: always

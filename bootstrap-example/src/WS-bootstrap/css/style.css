@@ -1,0 +1,14 @@
+body {
+  background-color: #f7feff;
+  background-image: url(../../assets/WS-bootstrap/img/background.png);
+  /* Image from https://www.transparenttextures.com/ */
+}
+
+header {
+  padding: 2.5rem;
+  background: white;
+}
+
+a.btn:visited {
+  color: white;
+}

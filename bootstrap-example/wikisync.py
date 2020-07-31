@@ -3,5 +3,6 @@ from igem_wikisync import wikisync
 wikisync.run(
     team='BITSPilani-Goa_India',
     src_dir='src',
-    build_dir='igem'
+    build_dir='igem',
+    # silence_warnings=True
 )
