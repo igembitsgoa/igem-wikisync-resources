@@ -3,3 +3,4 @@ venv
 *.log
 *.cookies
 credentials.sh
+upload_map.yml
